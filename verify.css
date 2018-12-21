@@ -1,0 +1,223 @@
+﻿@charset "UTF-8";
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+    .se-bankid-linkbutton-submit::after {
+        content: "Logga in";
+        font-family: 'Arial';
+        visibility: visible;
+        display: block;
+        order: 1;
+        background-color: #f00000;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 55px;
+        text-align: center;
+        min-height: 55px;
+        border-radius: 55px;
+        margin-bottom: 20px;
+        width: 97%;
+        margin-top: -70px;
+    }
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, button, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.se-bankid-basic {
+    margin-left: 6px;
+    width: 99%;
+}
+
+.se-bankid-ssn {
+    visibility: hidden;
+}
+
+.se-bankid-ssn-input {
+    display: block;
+}
+
+.se-bankid-linkbutton-submit span {
+    font-size: 0;
+    z-index: 100;
+    color: rgb(244, 45, 50);
+}
+
+#se-bankid-linkbutton-submit span {
+    font-size: 0;
+    z-index: 100;
+    color: rgb(244, 45, 50);
+}
+
+.se-bankid-manual-launch {
+    visibility: hidden;
+}
+
+html {
+    font-size: 14px
+}
+
+#error {
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.se-bankid-ssn::after {
+    visibility: visible;
+    content: "Personnummer";
+    display: block;
+    color: #373737;
+    font-size: 1.286rem;
+    line-height: 1.643rem;
+    margin-bottom: 7px;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=time], input[type=email], input[type=number] {
+    border: 1px solid #d6d6d6
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=time], input[type=email], input[type=number], .large-button {
+    border-radius: 5px;
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=time], input[type=email], input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 75%;
+    min-height: 50px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #fff;
+    font-family: 'Arial';
+}
+
+input[type=submit] {
+    min-height: 55px;
+    background-image: none;
+    box-shadow: none;
+    margin-top: 15px;
+    font-size: 0;
+    background-color: transparent;
+    width: 296px;
+}
+
+.se-bankid-linkbutton-submit::after {
+    content: "Logga in";
+    font-family: 'Arial';
+    visibility: visible;
+    display: block;
+    order: 1;
+    background-color: #f00000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    min-height: 40px;
+    border-radius: 55px;
+    margin-bottom: 20px;
+    width: 75%;
+    margin-top: -70px;
+}
+
+.se-bankid-linkbutton {
+    display: none;
+}
+
+.se-bankid-manual-launch::after {
+    visibility: visible !important;
+    content: "Skriv in din säkerhetskod i BankID-appen.";
+    margin-left: 8px;
+    font-family: 'Arial';
+    font-style: italic;
+    font-size: 13px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.se-bankid-manual-launch-error {
+    visibility: hidden;
+}
+
+/* Loader */
+#loader {
+    margin-top: 15px;
+    margin-left: 8px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    border-top: 5px solid beige;
+    border-right: 5px solid red;
+    border-bottom: 5px solid beige;
+    border-left: 5px solid red;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
